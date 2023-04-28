@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.feedbackStage.steps.FeedbackRatingFragment">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_stepNumberOutOfTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="20dp"
+            android:textAppearance="@style/TextAppearance.JBMono.Regular.S16"
+            android:textColor="@color/grey8"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth="wrap_content_constrained"
+            tools:text="№/№" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal"
+            android:textAppearance="@style/TextAppearance.JBMono.Bold.S16"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_stepNumberOutOfTotal"
+            app:layout_constraintWidth="wrap_content_constrained"
+            tools:text="Текст заголовка" />
+
+        <com.willy.ratingbar.BaseRatingBar
+            android:id="@+id/srb_rating"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="4dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srb_clearRatingEnabled="false"
+            app:srb_drawableEmpty="@drawable/ic_star_empty"
+            app:srb_drawableFilled="@drawable/ic_star_filled"
+            app:srb_isIndicator="false"
+            app:srb_numStars="5"
+            app:srb_rating="0"
+            app:srb_stepSize="1" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

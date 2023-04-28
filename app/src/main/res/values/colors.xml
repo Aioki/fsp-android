@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+
+    <color name="transparent">#00000000</color>
+
+    <!-- White -->
+    <color name="white">#FFFFFFFF</color>
+    <color name="white_alpha_60">#3CFFFFFF</color>
+    <color name="white_alpha_50">#80FFFFFF</color>
+
+    <!-- Black -->
+    <color name="black">#FF000000</color>
+    <color name="black_alpha_30">#1E000000</color>
+    <color name="black_alpha_10">#0A000000</color>
+    <color name="black_alpha_4">#04000000</color>
+    <color name="black2_alpha_154">#991D1D1B</color>
+
+    <color name="black01">#26272E</color>
+    <color name="black02">#474958</color>
+    <color name="black03">#5D5F70</color>
+    <color name="black04">#ADB3CF</color>
+    <color name="blue01">#5570FE</color>
+
+    <!-- Grey -->
+    <color name="grey1">#FFC4C4C4</color>
+    <color name="grey1_alpha_50">#80C4C4C4</color>
+    <color name="grey2">#FFEEEEEE</color>
+    <color name="grey3">#FFFAFAFA</color>
+    <color name="grey4">#FFF9F9F9</color>
+    <color name="grey5">#FFBFBFC0</color>
+    <color name="grey6">#FFD9D9D9</color>
+    <color name="grey7">#FF666666</color>
+    <color name="grey8">#C4C4C4</color>
+
+    <!-- Red -->
+    <color name="red1">#FFE52729</color>
+    <color name="red1_alpha_80">#CDE52729</color>
+    <color name="red1_alpha_50">#80E52729</color>
+    <color name="red1_alpha_30">#1EE52729</color>
+    <color name="red1_alpha_26">#1AE52729</color>
+    <color name="red1_alpha_10">#0AE52729</color>
+    <color name="red2">#FFEA361E</color>
+
+    <!-- Yellow -->
+    <color name="yellow1">#FFF5C556</color>
+    <color name="yellow2">#FFE6C13E</color>
+
+    <!-- Orange -->
+    <color name="orange1">#FFFCAA58</color>
+    <color name="orange2">#FFEB735C</color>
+    <color name="orange3">#FFE66632</color>
+
+    <!-- Blue -->
+    <color name="blue1">#FF3698FD</color>
+
+    <!-- Green -->
+    <color name="green1">#FF0DC646</color>
+    <color name="transparent60">#60FFFFFF</color>
+
+</resources>

@@ -1,0 +1,143 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+    id 'kotlin-kapt'
+}
+
+
+kapt {
+    correctErrorTypes true
+}
+
+apply plugin: 'dagger.hilt.android.plugin'
+apply plugin: 'com.android.application'
+apply plugin: "androidx.navigation.safeargs.kotlin"
+apply plugin: 'kotlin-kapt'
+apply plugin: "kotlin-parcelize"
+
+android {
+    namespace 'ru.aioki.myapplication'
+    compileSdk 33
+
+    def gitCommitCount = Integer.parseInt("git rev-list HEAD --count".execute().text.trim())
+    def gitBranchName = String.valueOf("git rev-parse --abbrev-ref HEAD".execute().text.trim())
+
+    buildFeatures {
+        dataBinding true
+        viewBinding true
+    }
+
+    defaultConfig {
+        applicationId "ru.aioki.myapplication"
+        minSdk 24
+        targetSdk 33
+        versionCode 1
+        versionName "DEBUG-${gitBranchName}-${gitCommitCount}"
+        archivesBaseName = "template-$versionName"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        // Flag to enable support for the new language APIs
+        coreLibraryDesugaringEnabled true
+
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+}
+
+dependencies {
+
+    implementation project(":api-client")
+
+    implementation 'androidx.preference:preference:1.2.0'
+
+
+    coreLibraryDesugaring 'com.android.tools:desugar_jdk_libs:2.0.3'
+
+    def navigationVersion = "2.5.3"
+
+    implementation 'androidx.core:core-ktx:1.8.0'
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.8.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation "androidx.navigation:navigation-fragment-ktx:$navigationVersion"
+    implementation "androidx.navigation:navigation-ui-ktx:$navigationVersion"
+
+    def groupie_version = "2.10.1"
+
+    implementation "com.github.lisawray.groupie:groupie:$groupie_version"
+    implementation "com.github.lisawray.groupie:groupie-viewbinding:$groupie_version"
+    implementation "com.github.lisawray.groupie:groupie-databinding:$groupie_version"
+
+    // Lifecycle
+
+    def lifecycleVersion = "2.6.1"
+
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycleVersion"
+    implementation "androidx.lifecycle:lifecycle-viewmodel-savedstate:$lifecycleVersion"
+    implementation "androidx.lifecycle:lifecycle-livedata-ktx:$lifecycleVersion"
+    implementation "androidx.lifecycle:lifecycle-common-java8:$lifecycleVersion"
+
+
+    def retrofitVersion = "2.9.0"
+    def okHttpVersion = "2.9.0"
+
+    implementation "com.squareup.retrofit2:converter-moshi:$retrofitVersion"
+    implementation "com.squareup.retrofit2:retrofit:$retrofitVersion"
+    implementation "com.squareup.okhttp3:okhttp:$okHttpVersion"
+
+    implementation "androidx.paging:paging-runtime-ktx:3.1.1"
+
+
+    def moshiVersion = "1.14.0"
+
+    implementation "com.squareup.moshi:moshi-kotlin:$moshiVersion"
+    implementation "com.squareup.moshi:moshi-adapters:$moshiVersion"
+    kapt "com.squareup.moshi:moshi-kotlin-codegen:$moshiVersion"
+
+    implementation 'androidx.hilt:hilt-navigation-fragment:1.0.0'
+    implementation 'com.google.dagger:hilt-android:2.45'
+    kapt 'com.google.dagger:hilt-compiler:2.45'
+
+    implementation "androidx.datastore:datastore-preferences:1.0.0"
+    implementation 'androidx.datastore:datastore-core:1.0.0'
+
+    def room_version = "2.4.2"
+
+    implementation "androidx.room:room-runtime:$room_version"
+    annotationProcessor "androidx.room:room-compiler:$room_version"
+
+    implementation "androidx.room:room-ktx:$room_version"
+
+    // To use Kotlin annotation processing tool (kapt)
+    kapt "androidx.room:room-compiler:$room_version"
+    kapt "org.xerial:sqlite-jdbc:3.36.0" //to support ARM M1
+
+    implementation "io.coil-kt:coil:2.2.2"
+    implementation "io.coil-kt:coil-svg:2.2.2"
+
+    implementation "com.github.skydoves:balloon:1.5.2"
+    implementation 'com.google.android.flexbox:flexbox:3.0.0'
+    implementation 'com.github.ome450901:SimpleRatingBar:1.5.1'
+
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+
+    implementation 'ru.egslava:MaskedEditText:1.0.5'
+    implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.1.0"
+    implementation 'com.github.kizitonwose:CalendarView:1.0.4'
+
+
+}

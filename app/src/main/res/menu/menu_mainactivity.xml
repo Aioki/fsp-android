@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/mainFragment"
+        android:icon="@drawable/selectior_item_event"
+        android:title="Мероприятия" />
+
+    <item
+        android:id="@+id/profileFragment"
+        android:icon="@drawable/selectior_item_profile"
+        android:title="Профиль" />
+
+</menu>

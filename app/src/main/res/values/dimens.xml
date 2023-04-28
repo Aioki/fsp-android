@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Размеры текста -->
+    <dimen name="S64">64sp</dimen>
+    <dimen name="S40">40sp</dimen>
+    <dimen name="S36">36sp</dimen>
+    <dimen name="S32">32sp</dimen>
+    <dimen name="S24">24sp</dimen>
+    <dimen name="S20">20sp</dimen>
+    <dimen name="S18">16sp</dimen>
+    <dimen name="S16">16sp</dimen>
+    <dimen name="S14">14sp</dimen>
+    <dimen name="S12">12sp</dimen>
+    <dimen name="S10">10sp</dimen>
+
+    <!-- Радиусы закругленых углов -->
+    <dimen name="corner_radius_32">32dp</dimen>
+    <dimen name="corner_radius_16">16dp</dimen>
+    <dimen name="corner_radius_12">12dp</dimen>
+    <dimen name="corner_radius_8">8dp</dimen>
+
+    <!-- Стандартные паддинги для экранов -->
+    <dimen name="padding_start">12dp</dimen>
+    <dimen name="padding_end">12dp</dimen>
+
+    <!-- Отступ от BottomSheet для FloatingActionButton -->
+    <dimen name="fab_margin">12dp</dimen>
+
+    <!-- Верхний отступ для строки поиска ресторанов -->
+    <dimen name="til_restaurants_search_top_margin">20dp</dimen>
+
+    <!-- Нижний отступ для TextView с названием ресторана на экране описания -->
+    <dimen name="tv_restaurant_description_title_bottom_margin">20dp</dimen>
+
+    <!-- Отступы для превью историй на главном экране -->
+    <dimen name="story_preview_margin_start">4dp</dimen>
+    <dimen name="story_preview_margin_end">4dp</dimen>
+
+    <!-- Размеры превью историй -->
+    <dimen name="story_preview_width">92dp</dimen>
+    <dimen name="story_preview_height">128dp</dimen>
+
+    <!-- Отступ сверху для названия продукта в кталоге -->
+    <dimen name="product_card_title_margin_top">0dp</dimen>
+
+    <!-- Отступ сверху для кнопки с ценой продукта в кталоге -->
+    <dimen name="product_card_btn_price_margin_bottom">0dp</dimen>
+
+    <!-- Отступы для элементов фильтра в каталоге -->
+    <dimen name="filter_items_margin_start">4dp</dimen>
+    <dimen name="filter_items_margin_end">4dp</dimen>
+
+    <!-- Паддинги для root категорий в диалоге списка категорий  -->
+    <dimen name="item_category_padding_start">20dp</dimen>
+    <dimen name="item_category_padding_end">8dp</dimen>
+
+    <!-- Отступы для ImageButton, которые находятся на краю экрана (но не для кнопок закрытия диалогов) -->
+    <dimen name="btn_image_margin_start">4dp</dimen>
+    <dimen name="btn_image_margin_end">4dp</dimen>
+
+    <!-- Отступ сверху для плейсхолдера на экране поиска в каталоге -->
+    <dimen name="home_search_not_found_placeholder_top_margin">0dp</dimen>
+
+    <!-- Отступы для карточек рекоммендаций в корзине -->
+    <dimen name="product_recommendation_margin_start">4dp</dimen>
+    <dimen name="product_recommendation_margin_end">4dp</dimen>
+
+</resources>

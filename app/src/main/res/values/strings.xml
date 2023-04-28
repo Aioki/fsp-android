@@ -1,0 +1,62 @@
+<resources>
+    <string name="app_name">ФСП</string>
+    <!-- Settings Activity Title -->
+    <string name="title_activity_settings">SettingsActivity</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string name="required_field">Обязательное поле</string>
+    <string name="invalid_birth_date">Некорректная дата рождения</string>
+    <string name="invalid_email">Некорректный email</string>
+    <string name="invalid_phone_number">Некорректный номер телефона</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="GoAuth">Авторизуйтесь</string>
+    <string name="e_mail">E-mail</string>
+    <string name="password">Пароль</string>
+    <string name="Login">Войти</string>
+    <string name="close">Закрыть</string>
+    <string name="further">Далее</string>
+    <string name="StepNumberOutOfTotal">%d/%d</string>
+    <string name="failed_get_order_feedback_data">Не удалось получить данные для отзыва</string>
+    <string name="PhoneNumber">Номер телефона</string>
+    <string name="GoToRegistration">Зарегистрироваться</string>
+    <string name="Registration">Регистрация</string>
+    <string name="RegistrationStep1">Регистрация 1/2</string>
+    <string name="RegistrationStep2">Регистрация 2/2</string>
+    <string name="submit_password">Подтвердите пароль</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="MiddleName">Отчество</string>
+    <string name="FirstName">Имя</string>
+    <string name="LastName">Фамилия</string>
+    <string name="ChoosePeriod">Выберите период</string>
+    <string name="EventsCalendar">Календарь мероприятий</string>
+    <string name="Today">Сегодня</string>
+    <string name="Tomorrow">Завтра</string>
+    <string name="Yesterday">Вчера</string>
+    <string name="Select">Выбрать</string>
+    <string name="exit">Выйти</string>
+
+
+</resources>

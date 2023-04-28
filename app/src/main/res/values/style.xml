@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Typography -->
+
+    <style name="TextAppearance" parent="TextAppearance.MaterialComponents.Headline6" />
+
+
+    <style name="TextAppearance.JBMono">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">@font/jetbrains_mono_light</item>
+        <item name="fontFamily">@font/jetbrains_mono_light</item>
+    </style>
+
+    <style name="TextAppearance.JBMono.Bold">
+        <item name="android:fontFamily">@font/jetbrains_mono_medium</item>
+        <item name="fontFamily">@font/jetbrains_mono_medium</item>
+    </style>
+
+    <style name="TextAppearance.JBMono.Bold.S16">
+        <item name="android:textSize">@dimen/S16</item>
+    </style>
+
+    <style name="TextAppearance.JBMono.Bold.S14">
+        <item name="android:textSize">@dimen/S14</item>
+    </style>
+
+    <style name="TextAppearance.JBMono.Bold.S18">
+        <item name="android:textSize">@dimen/S18</item>
+    </style>
+
+    <style name="TextAppearance.JBMono.Bold.S12">
+        <item name="android:textSize">@dimen/S12</item>
+    </style>
+
+    <style name="TextAppearance.JBMono.Semibold">
+        <item name="android:fontFamily">@font/inter_semibold</item>
+        <item name="fontFamily">@font/inter_semibold</item>
+    </style>
+
+    <style name="TextAppearance.JBMono.Semibold.S32">
+        <item name="android:textSize">@dimen/S32</item>
+    </style>
+
+    <style name="TextAppearance.JBMono.Semibold.S16">
+        <item name="android:textSize">@dimen/S16</item>
+    </style>
+
+    <style name="TextAppearance.JBMono.Semibold.S14">
+        <item name="android:textSize">@dimen/S14</item>
+    </style>
+
+    <style name="TextAppearance.JBMono.Regular">
+        <item name="android:fontFamily">@font/inter_regular</item>
+        <item name="fontFamily">@font/inter_regular</item>
+    </style>
+
+    <style name="TextAppearance.JBMono.Regular.S16">
+        <item name="android:textSize">@dimen/S16</item>
+    </style>
+
+    <style name="TextAppearance.JBMono.Regular.S14">
+        <item name="android:textSize">@dimen/S14</item>
+    </style>
+
+    <style name="TextAppearance.JBMono.Regular.S12">
+        <item name="android:textSize">@dimen/S12</item>
+    </style>
+
+    <!-- Shapes -->
+
+    <style name="ShapeAppearance" parent="ShapeAppearance.MaterialComponents.MediumComponent">
+        <item name="cornerFamily">rounded</item>
+    </style>
+
+    <style name="ShapeAppearance.32">
+        <item name="cornerSize">@dimen/corner_radius_32</item>
+    </style>
+
+    <style name="ShapeAppearance.16">
+        <item name="cornerSize">@dimen/corner_radius_16</item>
+    </style>
+
+    <style name="ShapeAppearance.12">
+        <item name="cornerSize">@dimen/corner_radius_12</item>
+    </style>
+
+    <style name="ShapeAppearance.Top16">
+        <item name="cornerSizeTopLeft">@dimen/corner_radius_16</item>
+        <item name="cornerSizeTopRight">@dimen/corner_radius_16</item>
+        <item name="cornerSizeBottomRight">0dp</item>
+        <item name="cornerSizeBottomLeft">0dp</item>
+    </style>
+
+    <style name="ShapeAppearance.Circle">
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <!-- Buttons -->
+
+    <style name="Button" parent="Widget.MaterialComponents.Button.UnelevatedButton">
+        <item name="android:textAppearance">@style/TextAppearance.JBMono.Bold.S16</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:paddingTop">14dp</item>
+        <item name="android:paddingBottom">14dp</item>
+        <item name="shapeAppearance">@style/ShapeAppearance.32</item>
+    </style>
+
+    <style name="Button.Elevated" parent="Widget.MaterialComponents.Button">
+        <item name="android:textAppearance">@style/TextAppearance.JBMono.Bold.S16</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:paddingTop">14dp</item>
+        <item name="android:paddingBottom">14dp</item>
+        <item name="android:elevation">12dp</item>
+        <item name="shapeAppearance">@style/ShapeAppearance.16</item>
+    </style>
+
+    <style name="Button.Primary">
+        <item name="android:textColor">@color/black</item>
+        <item name="backgroundTint">@color/selector_button_primary</item>
+    </style>
+
+    <style name="Button.Secondary">
+        <item name="android:textColor">@color/black</item>
+        <item name="backgroundTint">@color/grey2</item>
+    </style>
+
+    <style name="Button.Secondary.Icon">
+        <item name="iconGravity">textStart</item>
+        <item name="iconTint">@color/black</item>
+        <item name="iconSize">24dp</item>
+    </style>
+
+    <style name="Button.Image" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="android:layout_width">48dp</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:insetLeft">0dp</item>
+        <item name="android:insetRight">0dp</item>
+        <item name="iconGravity">textTop</item>
+        <item name="iconPadding">0dp</item>
+        <item name="iconTint">@color/black</item>
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearance.Circle</item>
+    </style>
+
+    <style name="Button.Text" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="android:textAppearance">@style/TextAppearance.JBMono.Bold.S16</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="Button.Text.Primary">
+        <item name="android:textColor">@color/red1</item>
+    </style>
+
+    <style name="Button.Text.Secondary">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="Button.Action" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="android:insetLeft">0dp</item>
+        <item name="android:insetRight">0dp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:paddingStart">0dp</item>
+        <item name="android:paddingEnd">0dp</item>
+        <item name="android:textAppearance">@style/TextAppearance.JBMono.Bold.S14</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textAlignment">textStart</item>
+        <item name="iconGravity">end</item>
+        <item name="iconSize">24dp</item>
+    </style>
+
+    <style name="Button.Image.DialogClose">
+        <item name="icon">@drawable/ic_close_grey</item>
+        <item name="iconTintMode">screen</item>
+        <item name="iconTint">@android:color/transparent</item>
+        <item name="iconSize">24dp</item>
+    </style>
+
+    <style name="Button.DeleteRed">
+        <item name="android:minHeight">52dp</item>
+        <item name="backgroundTint">@color/red2</item>
+        <item name="cornerRadius">15dp</item>
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:paddingBottom">12dp</item>
+        <item name="android:paddingStart">14dp</item>
+        <item name="android:paddingEnd">14dp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetLeft">0dp</item>
+        <item name="android:insetRight">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+    </style>
+
+    <!-- Cards -->
+
+    <style name="Card" parent="Widget.MaterialComponents.CardView">
+        <item name="shapeAppearance">@style/ShapeAppearance.16</item>
+        <item name="cardPreventCornerOverlap">false</item>
+        <item name="strokeWidth">0dp</item>
+    </style>
+
+    <style name="Card.Flat">
+        <item name="cardElevation">0dp</item>
+    </style>
+
+    <style name="Card.Elevated4">
+        <item name="cardElevation">4dp</item>
+    </style>
+
+    <style name="Card.Elevated8">
+        <item name="cardElevation">8dp</item>
+    </style>
+
+    <style name="Card.Elevated12">
+        <item name="cardElevation">12dp</item>
+    </style>
+
+    <style name="Card.Elevated16">
+        <item name="cardElevation">16dp</item>
+    </style>
+
+    <style name="Card.TopRounded">
+        <item name="shapeAppearance">@style/ShapeAppearance.Top16</item>
+    </style>
+
+    <style name="CardFilled" parent="Widget.Material3.CardView.Filled">
+        <item name="shapeAppearance">@style/ShapeAppearance.16</item>
+    </style>
+
+    <style name="CardFilled.BottomSheetDialogTopLine">
+        <item name="cornerSize">11dp</item>
+        <item name="android:backgroundTint">@color/grey6</item>
+    </style>
+
+    <!-- TextInputLayout -->
+
+    <style name="TextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearance.16</item>
+        <item name="boxStrokeWidth">0dp</item>
+        <item name="boxStrokeWidthFocused">0dp</item>
+        <item name="boxBackgroundColor">@color/grey2</item>
+        <item name="errorIconDrawable">@null</item>
+        <item name="errorTextColor">@color/red2</item>
+        <item name="android:textColorHint">@color/black</item>
+        <item name="hintTextColor">@color/black</item>
+    </style>
+
+    <style name="TextInputLayout.Search">
+        <item name="materialThemeOverlay">
+            @style/ThemeOverlay.MaterialComponents.TextInputEditText.OutlinedBox
+        </item>
+        <item name="boxCollapsedPaddingTop">0dp</item>
+        <item name="hintEnabled">false</item>
+        <item name="expandedHintEnabled">false</item>
+        <item name="startIconDrawable">@drawable/ic_search</item>
+        <item name="startIconTint">@color/grey1</item>
+        <item name="endIconMode">clear_text</item>
+        <item name="endIconTint">@color/grey1</item>
+    </style>
+
+    <!-- TabLayout -->
+
+    <style name="TabLayout" parent="Widget.MaterialComponents.TabLayout">
+        <item name="android:background">@color/grey3</item>
+        <item name="tabBackground">@color/grey3</item>
+        <item name="tabRippleColor">@null</item>
+        <item name="tabIndicator">@drawable/bg_tab_indicator</item>
+        <item name="tabIndicatorFullWidth">true</item>
+        <item name="tabIndicatorGravity">center</item>
+        <item name="tabIndicatorHeight">36dp</item>
+        <item name="tabMode">scrollable</item>
+        <item name="tabSelectedTextColor">@color/red1</item>
+        <item name="tabTextAppearance">@style/TextAppearance.JBMono.Bold.S16</item>
+        <item name="tabTextColor">@color/black</item>
+    </style>
+
+    <style name="TabLayout.SegmentedPicker">
+        <item name="android:background">@drawable/bg_segmented_picker</item>
+        <item name="tabBackground">@android:color/transparent</item>
+        <item name="tabIndicator">@drawable/bg_segmented_picker_indicator</item>
+        <item name="tabIndicatorColor">@color/white</item>
+        <item name="tabMode">fixed</item>
+        <item name="tabTextAppearance">@style/TextAppearance.JBMono.Bold.S14</item>
+        <item name="tabTextColor">@color/black</item>
+        <item name="tabSelectedTextColor">@color/black</item>
+    </style>
+
+    <style name="TabLayout.ViewPagerIndicator">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="tabBackground">@drawable/bg_vp_indicator_default</item>
+        <item name="tabIndicator">@drawable/bg_vp_indicator_selected</item>
+        <item name="tabIndicatorColor">@color/white</item>
+        <item name="tabMode">fixed</item>
+        <item name="tabIndicatorHeight">4dp</item>
+    </style>
+
+    <!-- NumberCodeInput -->
+
+    <!--    <style name="NumberCodeInput" parent="">-->
+    <!--        <item name="drawStroke">false</item>-->
+    <!--        <item name="drawFocusStroke">false</item>-->
+    <!--        <item name="strokeErrorColor">@color/red2</item>-->
+    <!--        <item name="squareBox">true</item>-->
+    <!--        <item name="boxRadius">8dp</item>-->
+    <!--        <item name="boxFillColorDefault">@color/grey2</item>-->
+    <!--        <item name="spaceLength">16dp</item>-->
+    <!--        <item name="android:textAppearance">@style/TextAppearance.JBMono.Bold.S16</item>-->
+    <!--        <item name="android:textColor">@color/black</item>-->
+    <!--        <item name="android:padding">16dp</item>-->
+    <!--    </style>-->
+
+    <!-- Switch -->
+
+    <style name="Switch">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textAppearance">@style/TextAppearance.JBMono.Bold.S14</item>
+        <item name="thumbIcon">@drawable/ic_circle</item>
+        <item name="thumbIconTint">@color/white</item>
+        <item name="trackDecorationTint">@android:color/transparent</item>
+        <item name="materialThemeOverlay">@style/ThemeOverlay.App.Switch</item>
+    </style>
+
+    <!-- CheckBox -->
+
+    <style name="CheckBox">
+        <item name="buttonTint">@color/selector_check_box</item>
+        <item name="buttonIconTint">@color/white</item>
+    </style>
+
+    <!--  RadioButton  -->
+    <style name="RadioButton">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="RadioButton.Isolated">
+        <item name="android:layout_width">48dp</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="minHeight">0dp</item>
+        <item name="minWidth">0dp</item>
+        <item name="android:background">@drawable/bg_radiobutton_v2_ripple</item>
+        <item name="android:button">@null</item>
+        <item name="android:drawableStart">@drawable/selector_radio_button_v2</item>
+        <item name="android:paddingStart">12dp</item>
+    </style>
+
+    <style name="StoryIndicator" parent="Widget.Material3.LinearProgressIndicator">
+        <item name="android:elevation">4dp</item>
+        <item name="trackCornerRadius">8dp</item>
+        <item name="trackColor">@color/white_alpha_60</item>
+        <item name="indicatorColor">@color/white</item>
+        <item name="trackThickness">5dp</item>
+        <item name="android:indeterminate">false</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:paddingEnd">4dp</item>
+        <item name="android:paddingStart">4dp</item>
+    </style>
+
+    <style name="Theme.Dialog.FullScreen" parent="">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:windowTranslucentStatus">false</item>
+    </style>
+
+    <!-- DatePicker -->
+    <style name="ThemeOverlay.App.DatePicker" parent="ThemeOverlay.Material3.MaterialCalendar">
+        <item name="backgroundTint">@color/red1</item>
+        <item name="android:backgroundTint">@color/grey3</item>
+    </style>
+
+    <style name="MaterialToolbar" parent="Widget.MaterialComponents.AppBarLayout.Primary">
+        <item name="android:background">@color/transparent</item>
+        <item name="elevation">0dp</item>
+    </style>
+
+    <style name="Button.Text2" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="android:layout_height">24dp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textAppearance">@style/TextAppearance.JBMono.Semibold.S14</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:insetLeft">0dp</item>
+        <item name="android:insetRight">0dp</item>
+        <!--        <item name="android:padding">0dp</item>-->
+    </style>
+
+
+    <style name="ThemeOverlay.App.Switch" parent="">
+        <!--<item name="colorSecondary">@color/blue3</item>-->
+        <item name="android:background">@drawable/bg_switch_ripple</item>
+        <item name="thumbTint">@color/selector_switch_thumb</item>
+        <item name="trackTint">@color/selector_switch_track</item>
+        <item name="android:textColor">@color/selector_switch_text</item>
+        <item name="switchTextAppearance">@style/SwitchTextAppearance</item>
+    </style>
+
+    <style name="ThemeOverlay.App.Switch.Enabled">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+
+    <style name="SwitchTextAppearance">
+        <item name="android:textColor">@color/selector_switch_text</item>
+    </style>
+
+
+    <style name="ToggleGroupItemStyle" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:insetLeft">0dp</item>
+        <item name="android:insetRight">0dp</item>
+        <item name="backgroundTint">@drawable/selector_toggle_item_bg_color</item>
+    </style>
+
+    <style name="Card.Rounded">
+        <item name="shapeAppearance">@style/ShapeAppearance.Circle</item>
+    </style>
+
+    <style name="Card.Rounded.Flat">
+        <item name="cardElevation">0dp</item>
+    </style>
+
+
+    <style name="DefaultShapeAppearance" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">4dp</item>
+    </style>
+
+    <!--  Нижнее меню   -->
+    <style name="BottomNavigationView" parent="@style/TextAppearance.AppCompat.Caption">
+        <item name="android:textSize">10sp</item>
+        <item name="fontFamily">@font/jetbrains_mono_light</item>
+        <item name="android:textColor">@color/black02</item>
+    </style>
+
+    <!-- Дубльирующий стиль    -->
+    <style name="BottomNavigationView.Active">
+        <item name="android:textSize">10sp</item>
+        <item name="fontFamily">@font/jetbrains_mono_light</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="TextInputLayout.DropMenu" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+        <item name="boxBackgroundColor">@color/white</item>
+        <!--        <item name="boxStrokeColor">@color/text_input_layout_stroke_color</item>-->
+        <item name="hintEnabled">false</item>
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearance.16</item>
+        <item name="boxStrokeWidth">0dp</item>
+        <item name="boxStrokeWidthFocused">0dp</item>
+        <item name="errorIconDrawable">@null</item>
+        <item name="errorTextColor">@color/red2</item>
+        <item name="android:textColorHint">@color/black</item>
+        <item name="hintTextColor">@color/black</item>
+    </style>
+
+</resources>
